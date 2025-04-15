@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dezenu Website Simples</title>
+  <style>
+    :root {
+      --primary-color: #eabe10b8;
+      --text-color: #333;
+      --bg-color: #f9f9f9;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .header-text {
+        text-align: center;
+        flex: 1;
+      }
+      
+      .img-head-left,
+      .img-head-right {
+        width: 200px;
+        height: 150px;
+      }
+      
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: var(--primary-color);
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .about {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .contact-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #d4a30d;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  
+<header>
+    <div class="header-container">
+        <img class="img-head-left" src="mundu.gif" alt="laiha" width="200" height="150">      
+        <div class="header-text">
+        <h1>Benvindu Mai Website Simples</h1>
+        <p><marquee>Aprende Website uza HTML & CSS</marquee></p>
+        </div>    
+        <img class="img-head-right" src="html-4-17495.gif" alt="laiha" width="200" height="150"> 
+    </div>
+</header>
+      
+  
+  <nav>
+    <a href="#">Varanda</a>
+    <a href="#">Kona-ba</a>
+    <a href="#">Servisu</a>
+    <a><a href="Galery.html">Galerry</a></a>
+    <a href="#">Kontaktu</a>
+    <a href="Mapa.html">Mapa</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Benvindu Mai Situs Website ida ne'e</h1>
+    <p>Bele uza website responsive ho java script</p>
+    <img src="Bandeira Timor.gif" alt="laiha">
+  </section>
+
+  <div class="container">
+    <section class="about">
+      <h2>Definisaun Website</h2>
+      <p>        
+        Website mak konjuntu pájina web (web pages) ne’ebé bele hare iha Internet, uza navegador hanesan Chrome, Firefox, ka Safari. Website sira halo ho HTML, 
+        CSS, no duni JavaScript (tanba buat sira ne’e halo estrutura, dezenhu, no funsionalidade).
+      </p>
+      <h4>Ita bele dehan:</h4>
+        Website mak lugar ida iha Internet ne’ebé fornese informasaun ka servisu ba utilizadór sira. Website bele iha página ida de'it (single page), 
+        ka barak (multi-page), no bele atu interativu ka simple.
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <img src="html.png" alt="">
+        <h3>HTML</h3>
+        <p>HTML mak lian padraun atu halo estrutura ba website sira. HTML bele hatudu titulu, paragrafu, imajen, video, tabela, link, no buat seluk iha página web.</p>
+      </div>
+      <div class="card">
+        <img src="css.png" alt="">
+        <h3>CSS</h3>
+        <p>CSS (Cascading Style Sheets) mak linguajen estilu ne’ebé uza atu dezenha no bele bele forma bonita ba HTML iha website.</p>
+      </div>
+      <div class="card">
+        <img src="javaScript.png" alt="">
+        <h3>JAVA SCRIPTS</h3>
+        <p>JavaScript (JS) mak linguajen programação ne’ebé uza iha web atu halo website bele interativu no dinamiku.</p>
+      </div>
+    </section>
+
+    <section class="video">
+        <video width="600" controls poster="thumbnail.jpg">
+            <source src="your-video.mp4" type="video/mp4">
+          </video>
+    </section>
+
+    <section class="contact-form">
+      <h2>Kontaktu Ami</h2>
+      <form>
+        <label for="name">Naran</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+
+        <label for="message">Mensajen</label>
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Manda</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Website Simple. All rights reserved.</p>
+  </footer>
+</body>
+</html>
