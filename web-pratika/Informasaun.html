@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News List</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f2f2f2;
+        padding: 30px;
+        margin: 0;
+      }
+      
+      .page-title {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #222;
+      }
+      
+      .news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      
+      .news-item {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        display: flex;
+        overflow: hidden;
+      }
+      
+      .news-item img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+      }
+      
+      .news-info {
+        padding: 20px;
+      }
+      
+      .news-info h2 {
+        margin: 0 0 10px;
+        color: #333;
+      }
+      
+      .news-info h4 {
+        margin: 0 0 15px;
+        font-weight: normal;
+        color: #777;
+      }
+      
+      .news-info p {
+        margin: 0;
+        color: #555;
+        line-height: 1.5;
+      }
+      
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">📰 Latest News & Information</h1>
+
+  <div class="news-list">
+
+    <!-- NEWS ITEM 1 -->
+    <div class="news-item">
+      <img src="digital.jpg" alt="News 1">
+      <div class="news-info">
+        <h2>New Digital ID System Launched</h2>
+        <h4>Government introduces digital solution for identity verification</h4>
+        <p>
+          Timor-Leste’s Ministry of Technology has launched a new digital ID system
+          to help citizens access government services faster and securely.
+        </p>
+      </div>
+    </div>
+
+    <!-- NEWS ITEM 2 -->
+    <div class="news-item">
+      <img src="fake news.jpg" alt="News 2">
+      <div class="news-info">
+        <h2>Education Reform in Rural Areas</h2>
+        <h4>Focus on infrastructure and digital access</h4>
+        <p>
+          The Ministry of Education announced investments in rural schools,
+          including solar power, internet connectivity, and teacher training.
+        </p>
+      </div>
+    </div>
+
+    <!-- NEWS ITEM 3 -->
+    <div class="news-item">
+      <img src="health.jpg" alt="News 3">
+      <div class="news-info">
+        <h2>New Public Health Center Opened in Baucau</h2>
+        <h4>Bringing health services closer to the people</h4>
+        <p>
+          A new community health center was opened to serve over 5,000 residents,
+          offering maternal care, vaccinations, and emergency services.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
